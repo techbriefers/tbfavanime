@@ -4,7 +4,7 @@ Easy jQuery based icon animator easy to use
 
 ### To get started, check out the:
 
-[Homepage](https://techbriefers.com) - [Plugin Usage details](https://techbriefers.com/animate-favicon-techbriefers-tbfavanime)
+[Homepage](https://techbriefers.com) - [Plugin Usage details](https://techbriefers.com/how-to-animate-favicon-icon-techbriefers-tbfavanime)
 
 ### To get it:
 
@@ -21,7 +21,7 @@ The files `index.html`, `sample-always-animate.html` and `sample-reverse-animate
 
 If there’s anything you’d like to discuss, contact via 
 [contact form](https://techbriefers.com/contact-us) on my website or 
-put your thoughts in [comment box](https://techbriefers.com/animate-favicon-techbriefers-tbfavanime).
+put your thoughts in [comment box](https://techbriefers.com/how-to-animate-favicon-icon-techbriefers-tbfavanime).
 
 <br>
 
