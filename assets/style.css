@@ -1,0 +1,124 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    margin: 0;
+}
+
+a {
+    background-color: transparent;
+    color: #6FBEF3;
+    text-decoration: none;
+}
+
+.header {
+    background: #2d3e50 !important;
+    display: block;
+    min-height: 50px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom: none;
+    text-align: center;
+}
+
+.techb-main-menu {
+    width: 80%;
+    margin: auto;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.techb-menu-horizontal {
+    white-space: nowrap;
+}
+
+.techb-form input:not([type]), .techb-menu {
+    box-sizing: border-box;
+}
+
+.techb-main-menu .techb-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+    line-height: 90%;
+    float: left;
+}
+
+.techb-menu-horizontal .techb-menu-heading, .techb-menu-horizontal .techb-menu-item, .techb-menu-horizontal {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.techb-main-menu a {
+    color: #6FBEF3;
+}
+
+.techb-menu-heading, .techb-menu-link {
+    padding: .5em 1em;
+}
+
+.techb-menu-heading {
+    text-transform: uppercase;
+    color: #565d64;
+}
+
+.techb-menu-heading, .techb-menu-link {
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.techb-menu-horizontal .techb-menu-list {
+    display: inline-block;
+}
+
+/*@media (min-width: 48em)*/
+.techb-main-menu ul {
+    float: right;
+}
+
+.techb-menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.techb-menu-item {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.techb-menu-item, .techb-menu-list {
+    position: relative;
+}
+
+.techb-menu-heading, .techb-menu-link {
+    padding: .5em 1em;
+}
+
+.content {
+    width: 80%;
+    margin: 55px auto;
+    text-align: center;
+}
+
+.footer {
+    color: #fefefe;
+    background: #111;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
