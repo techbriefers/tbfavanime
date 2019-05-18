@@ -21,6 +21,9 @@
  */
 $.tbFavAnime = function (options) {
     if (options.images !== undefined) {
+        if (options.images.length < 2) {
+            console.warn('[tbFavAnime] Please Use alteast two images for animation.');
+        }
         var favcounter = 1;
         var favimgs = options.images;
         var interval;
@@ -38,15 +41,18 @@ $.tbFavAnime = function (options) {
          * Start Favicon animation
          */
         function startAnime() {
-            interval = setInterval(function () {
-                if (favcounter == favimgs.length - 1) {
-                    favcounter = 0;
-                } else {
-                    favcounter++;
-                }
-                console.log(favcounter);
-                $('link[rel=icon]').attr('href', path_to_img + favimgs[favcounter]);
-            }, (options.interval !== undefined) ? options.interval : 500);
+            if (options.images.length > 1) {
+                interval = setInterval(function () {
+                    if (favcounter == favimgs.length - 1) {
+                        favcounter = 0;
+                    } else {
+                        favcounter++;
+                    }
+                    $('link[rel=icon]').attr('href', path_to_img + favimgs[favcounter]);
+                }, (options.interval !== undefined) ? options.interval : 500);
+            } else {
+                $('link[rel=icon]').attr('href', path_to_img + favimgs[0]);
+            }
         }
 
         /**
@@ -58,6 +64,7 @@ $.tbFavAnime = function (options) {
             }
             $('link[rel=icon]').attr('href', defIco);
         }
+
         if (animeType == 0) {
             // For always animate
             startAnime();
@@ -78,5 +85,8 @@ $.tbFavAnime = function (options) {
                 stopAnime();
             });
         }
+
+    } else {
+        console.warn('[tbFavAnime] Please Use images.');
     }
 }
